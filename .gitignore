@@ -1,3 +1,4 @@
 wiki
 issues
 contrib/config.json
+contrib/*.bak*
