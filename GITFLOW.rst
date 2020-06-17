@@ -87,7 +87,7 @@ reuse the existing pair. If you already have an SSH keypair somewhere else, it
 is **NOT** recommended that you copy it across and reuse it! Instead, generate
 a new keypair.
 
-*Generate a new keypair*
+**Generate a new keypair**
 
 To generate a new SSH keypair, log into your TKLDev via SSH and run the below
 command. Be sure to update the email address, ideally use the same one that is
@@ -130,7 +130,7 @@ Here's is the example output for Jeremy on a new TKLDev::
    |      .oo=+. .== |
    +----[SHA256]-----+
 
-*Add the public key to your GitHub Profile*
+**Add the public key to your GitHub Profile**
 
 Once that is complete, (assuming the default filename) output the public key
 component like this::
