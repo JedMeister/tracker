@@ -50,27 +50,30 @@ free GitHub account`_.
 Configure local git on your TKLDev
 ''''''''''''''''''''''''''''''''''
 
-Configure git so it knows who you are. Change the first 2 lines below to use
-your name (or username) and your email address. It's best to use the same
-email that your GitHub account uses. Log into your TKLDev and open your
-``~/.bashrc.d/git`` file and look for the following lines::
+Configure git so it knows who you are. Log into your TKLDev and open your
+``~/.bashrc.d/git`` file for editing. Look for the 4 lines below. You'll need
+to uncomment them and change the first 2 lines to use your name (or username)
+and your email address. It's best to use the same email that your GitHub
+account uses. These are the 4 lines to look for (they should be right at the
+top)::
 
    #export GIT_AUTHOR_NAME="Your Name"
    #export GIT_AUTHOR_EMAIL="your@email.com"
    #export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
    #export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 
-Remove the "hash" (aka "pound") symbol from the start of each of those lines
-and update with your name and email. E.g. here's how the first 4 lines of
-Jeremy's looks::
+In BASH, anything after a ``#`` character is ignored, so remove the "hash" (aka
+"pound") symbol from the start of each of those 4 lines. Then update the first
+2 with your name and email. E.g. here's the first 4 lines of Jeremy's::
 
    export GIT_AUTHOR_NAME="Jeremy Davis"
    export GIT_AUTHOR_EMAIL="jeremy@turnkeylinux.org"
    export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
    export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 
-To ensure that this new info is used, either log out and log back in, or
-source this file, like this::
+To ensure that this new info is used in this current session, either log out
+and log back in, or source this file, like this (you only need to do this
+once)::
 
    . ~/.bashrc.d/git
 
